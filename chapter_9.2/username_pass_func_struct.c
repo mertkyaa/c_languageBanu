@@ -14,6 +14,7 @@ struct login
 void login(struct login log) {
     char username1[20];
     char password1[20];
+    here:
 
     printf("enter your username: ");
     scanf("%s",username1);
@@ -28,6 +29,7 @@ void login(struct login log) {
     else
     {
         printf("try again");
+        goto here;
     }
 }
 
